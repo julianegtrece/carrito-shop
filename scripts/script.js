@@ -82,7 +82,7 @@ function insertarCarritoHTML() {
     row.innerHTML = `
     <div class="row ">
     <div class="col-sm-5">
-              <img class="card-img" src="../img/producto1.jpg" alt="Suresh Dasari Card">
+              <img class="card-img" src="img/producto1.jpg" alt="Suresh Dasari Card">
             </div>
 
             <div class="col-sm-7">
