@@ -46,3 +46,14 @@
     width: 250px; 
     height: 500px;
   }
+
+
+  ol.flickity-page-dots{
+    display:none;
+}
+
+
+.imagen-portada{
+  height: 300px;
+}
+
