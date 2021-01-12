@@ -55,6 +55,17 @@ $('.boton-vaciar').on('click', function (event, pointer, cellElement, cellIndex)
 
 
 
+$(document).on('click','.boton-borrar',function(e){
+  const productoId = e.currentTarget.parentElement.querySelector('.boton-borrar').getAttribute('data-id');
+
+  console.log(e.currentTarget.parentElement.querySelector('.boton-borrar').getAttribute('data-id'));
+
+  articulosCarrito = articulosCarrito.filter(producto=> producto.id != productoId)
+  insertarCarritoHTML();
+  guardarStorage();
+
+});
+
 
 
 
@@ -145,7 +156,7 @@ function insertarCarritoHTML() {
               <div class="card-body">
                 <h5 class="card-title">${nombre}</h5>
                 <p class="card-text">Precio: ${precio} Cantidad:${cantidad}</p>
-                <a href="#" class="btn btn-primary">borrar</a>
+                <a href="#" class="btn btn-primary boton-borrar" data-id="${id}" >borrar</a>
               </div>
             </div>
             </div>

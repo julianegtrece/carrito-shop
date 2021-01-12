@@ -17,6 +17,9 @@
 <body>
   <header>
 
+
+    
+
   </header>
 
 
@@ -28,21 +31,18 @@
 
           <div class="carousel-cell celdas-item ">
             <div class="card producto">
-              <img src="img/producto1.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Mother</h1>
+              <img class="imagen-portada" src="img/producto1.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Tomb Raider</h1>
               <p class="price">$19.99</p>
               <p>Some text about the jeans..</p>
-              <p class="ID">Some text about the jeans..</p>
-
-              <input id="prodId" name="prodId" type="hidden" value="01">
               <p><button class="botonCompra"  data-id="0">Añadir al carro</button></p>
             </div>
           </div>
 
           <div class="carousel-cell celdas-item">
             <div class="card">
-              <img src="img/producto2.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Teclado </h1>
+              <img class="imagen-portada" src="img/producto2.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Call of Duty </h1>
               <p class="price">$24.99</p>
               <p>Some text about the jeans..</p>
               <p><button class="botonCompra"  data-id="1">Añadir al carro</button></p>
@@ -50,8 +50,8 @@
           </div>
           <div class="carousel-cell celdas-item">
             <div class="card">
-              <img src="img/producto3.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>gabinete</h1>
+              <img class="imagen-portada" src="img/producto3.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Overwatch</h1>
               <p class="price">$9.99</p>
               <p>Some text about the jeans..</p>
               <p><button class="botonCompra"  data-id="2">Añadir al carro</button></p>
@@ -59,8 +59,8 @@
           </div>
           <div class="carousel-cell celdas-item">
             <div class="card">
-              <img src="img/producto4.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Monitor</h1>
+              <img class="imagen-portada" src="img/producto4.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Uncharted 4</h1>
               <p class="price">$39.99</p>
               <p>Some text about the jeans..</p>
               <p><button class="botonCompra"  data-id="3">Añadir al carro</button></p>
@@ -68,8 +68,8 @@
           </div>
           <div class="carousel-cell celdas-item">
             <div class="card">
-              <img src="img/producto5.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Placa de video</h1>
+              <img class="imagen-portada" src="img/producto5.jpg" alt="Denim Jeans" style="width:100%">
+              <h1>Destiny</h1>
               <p class="price">$99.99</p>
               <p>Some text about the jeans..</p>
               <p><button class="botonCompra"  data-id="4">Añadir al carro</button></p>
@@ -80,7 +80,6 @@
         </div>
       </div>
 
-      
       <div class="col-4 carrito">
         <h2>Carrito</h2>
         <div class="box-card-items">
@@ -92,8 +91,8 @@
         <ul id="carrito" class="list-group"></ul>
         <hr>
         <!-- Precio total -->
-        <p class="text-right">Total: <span id="total"></span>&dollar;</p>
-        <button class="btn btn-danger boton-vaciar">Vaciar</button>
+        <!-- <p class="text-right">Total: <span id="total"></span>&dollar;</p> -->
+        <button id="boton-vaciar" class="btn btn-danger boton-vaciar">Vaciar</button>
       </div>
 
     </div>
