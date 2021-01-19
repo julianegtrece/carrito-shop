@@ -5,109 +5,124 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!-- BOOTSTRAPS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  <!-- Flickity -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
 
 </head>
 
 <body>
+
+
+
+
+
+
+
+
   <header>
 
+    <div class="container carrito-desplegable">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-12 main-section">
+          <div class="dropdown">
+            <button type="button" class="btn btn-info" data-toggle="dropdown">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrito <span
+                class="badge badge-pill badge-danger articulos-carrito">0</span>
+            </button>
+            <div class="dropdown-menu carrito-items">
 
-    
+              <div class="row total-header-section">
+
+                <div class="col-lg-6 col-sm-6 col-6">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span
+                    class="badge badge-pill badge-danger articulos-carrito">0</span>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
+                  <p>Total: <span class="text-info precioTotal">$0</span></p>
+                </div>
+              </div>
+
+
+
+              <div class="row items-del-carito">
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+              <div class="row">
+                <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
+                  <button class="btn btn-primary btn-block">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
 
   </header>
 
 
-  <div class="container-fluid">
+  <div class="container">
 
     <div class="row">
-      <div class="col-8">
-        <div class="container-slides listaProductos">
+      <div class="carousel ">
 
-          <div class="carousel-cell celdas-item ">
-            <div class="card producto">
-              <img class="imagen-portada" src="img/producto1.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Tomb Raider</h1>
-              <p class="price">$19.99</p>
-              <p>Some text about the jeans..</p>
-              <p><button class="botonCompra"  data-id="0">Añadir al carro</button></p>
-            </div>
-          </div>
-
-          <div class="carousel-cell celdas-item">
-            <div class="card">
-              <img class="imagen-portada" src="img/producto2.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Call of Duty </h1>
-              <p class="price">$24.99</p>
-              <p>Some text about the jeans..</p>
-              <p><button class="botonCompra"  data-id="1">Añadir al carro</button></p>
-            </div>
-          </div>
-          <div class="carousel-cell celdas-item">
-            <div class="card">
-              <img class="imagen-portada" src="img/producto3.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Overwatch</h1>
-              <p class="price">$9.99</p>
-              <p>Some text about the jeans..</p>
-              <p><button class="botonCompra"  data-id="2">Añadir al carro</button></p>
-            </div>
-          </div>
-          <div class="carousel-cell celdas-item">
-            <div class="card">
-              <img class="imagen-portada" src="img/producto4.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Uncharted 4</h1>
-              <p class="price">$39.99</p>
-              <p>Some text about the jeans..</p>
-              <p><button class="botonCompra"  data-id="3">Añadir al carro</button></p>
-            </div>
-          </div>
-          <div class="carousel-cell celdas-item">
-            <div class="card">
-              <img class="imagen-portada" src="img/producto5.jpg" alt="Denim Jeans" style="width:100%">
-              <h1>Destiny</h1>
-              <p class="price">$99.99</p>
-              <p>Some text about the jeans..</p>
-              <p><button class="botonCompra"  data-id="4">Añadir al carro</button></p>
-            </div>
-          </div>
-
-
-        </div>
       </div>
 
-      <div class="col-4 carrito">
-        <h2>Carrito</h2>
-        <div class="box-card-items">
-          
 
-        </div>
-
-        <!-- Elementos del carrito -->
-        <ul id="carrito" class="list-group"></ul>
-        <hr>
-        <!-- Precio total -->
-        <!-- <p class="text-right">Total: <span id="total"></span>&dollar;</p> -->
-        <button id="boton-vaciar" class="btn btn-danger boton-vaciar">Vaciar</button>
-      </div>
 
     </div>
 
-    <script src="scripts/script.js"></script>
 
+    <!-- Scripts -->
+
+
+    <!-- <script src="scripts/script.js"></script> -->
+
+    <script src="scripts/productos.js"></script>
+
+    <script src="scripts/cargarProductos.js"></script>
+
+    <script src="scripts/scriptConcarritoHover.js"></script>
 
 
 
   </div>
 
-
-
-
-  <!-- Flickity HTML init -->
 
 
 
